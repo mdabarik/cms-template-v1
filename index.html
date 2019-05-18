@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.bundled.css"> -->
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <li class="nav-item">
+                <a href="#" id="navbar-toggler">
+                    <i class="fa fa-dedent"></i>
+                </a>
+            </li>
+            <li class="nav-item dropdown drop2">
+                <a href="#" class="nav-link nav-link-cta dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-home"></i>
+                    <span class="hide-md">Admin</span>           
+                </a>
+                <div class="dropdown-menu visit-site">
+                    <a href="#" class="dropdown-item"  id="visit-site" target="_blank">Visit Site</a>
+                </div>
+            </li>
+            <li class="nav-item add-new-btn add-new-parent">
+                <a  href="#" class="nav-link nav-link-cta dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-plus"></i> <span class="hide-md">New</span>
+                </a>
+                <div class="dropdown-menu add-new">
+                    <a href="#" class="dropdown-item"  id="visit-site" >Post</a>
+                    <a href="#" class="dropdown-item"  id="visit-site" >Page</a>
+                    <a href="#" class="dropdown-item"  id="visit-site" >User</a>
+                </div>
+            </li>
+        </div>
+        <nav class="nav-top" id="top-nav">
+            <ul class="nav-list mr-1">
+                <!-- <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fa fa-envelope"></i>
+                        <span class="notification">88</span>
+                    </a>
+                </li> -->
+                <li class="nav-item noti-md">
+                    <a href="#" class="nav-link"><i class="fa fa-bell"></i>
+                        <span class="notification">18</span>
+                    </a>
+                </li>
+                <li id="drop1" class="nav-item profile-link dropdown">
+                    <a href="#" class="nav-link nav-link-cta dropdown-toggle" style="font-size:5px" data-toggle="dropdown"> 
+                        <img src="img/user.png" width="20" height="20" style="border-radius:50%;display:inline-block" alt="Profile"> Howdy</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Profile</a>
+                        <a href="#" class="dropdown-item">Settings</a>
+                        <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="utitlities">
+        <div id="nav-container">
+            <nav class="nav-left" id="side-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+
+                    <li class="nav-item">
+                        <a href="#" data-toggle="collapse" data-target="#posts" class="nav-link active"><i class="fa fa-pencil-square-o"></i> Posts
+                        </a>
+                        <ul id="posts" class="collapse sub-list">
+                            <li class="sub-item d-block pt-3 lead">
+                                <a class="d-block sub-link p-sub" href="posts.html">View All</a>
+                            </li>
+                            <li class="sub-item d-block pt-3 pb-2 lead">
+                                <a class="d-block sub-link p-sub" href="post-new.html">Add New</a>
+                            </li>
+                        </ul>
+
+                        <!--
+                            <a href="#" data-toggle="collapse" data-target="#posts" class="navbar-side-link">
+                            <i class="fa fa-pencil-square"></i> Posts
+                        </a>
+                        <ul id="posts" class="collapse sub-list">
+                            <li class="sub-item pl-5 ml-3 pt-2 lead">
+                                <a href="posts.html" class="active">All Posts</a>
+                            </li>
+                            <li class="sub-item pl-5 ml-3 pt-2 lead">
+                                <a href="#">Add New Post</a>
+                            </li>
+                        </ul>
+                        -->
+                    </li>
+                    <li class="nav-item nav-hover">
+                        <a href="#" data-toggle="collapse" data-target="#pages" class="nav-link hover-right"><i class="fa fa-file-text-o"></i> Pages
+                        </a>
+                        <ul id="pages" class="collapse sub-list show">
+                            <li class="sub-item d-block pt-3 lead">
+                                <a class="d-block sub-link p-sub active-sub" href="#">View All</a>
+                            </li>
+                            <li class="sub-item d-block pt-3 pb-2 lead">
+                                <a class="d-block sub-link p-sub" href="#">Add New</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-list-alt"></i> Categories</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-comments"></i> Comments</a></li>
+                    <li class="nav-item">
+                        <a href="#" data-toggle="collapse" data-target="#users" class="nav-link"><i class="fa fa-users"></i> Users</a>
+                        <ul id="users" class="collapse sub-list">
+                            <li class="sub-item d-block pt-3 lead">
+                                <a class="d-block sub-link p-sub" href="#">View All</a>
+                            </li>
+                            <li class="sub-item d-block pt-3 pb-2 lead">
+                                <a class="d-block sub-link p-sub" href="#">Add New</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-gear"></i> Settings</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+<!--////////////////////|| Main Content Individual depends on pages ||////////////////////////////-->
+        <div class="content-right pb-3"> 
+            
+            <div class="container">
+                <h1 class="pb-2 text-t-size text-info">Dashboard</h1>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card linear-gradient-1">
+                            <div class="card-block d-flex flex-column py-5 text-white">
+                                <i class="fa fa-user"></i>
+                                <h4 class="text-uppercase">All Posts</h4>
+                                <span class="user-online">12000</span>
+                                <a href="#">View All Posts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card linear-gradient-2">
+                            <div class="card-block d-flex flex-column py-5 text-white">
+                                <i class="fa fa-file-text-o"></i>
+                                <h4 class="text-uppercase">All Pages</h4>
+                                <span class="user-online">12000</span>
+                                <a href="#">View All Pages</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card linear-gradient-3">
+                            <div class="card-block d-flex flex-column py-5 text-white">
+                                <i class="fa fa-list-alt"></i>
+                                <h4 class="text-uppercase">All Categories</h4>
+                                <span class="user-online">12000</span>
+                                <a href="#">View All Categories</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card linear-gradient-4">
+                            <div class="card-block d-flex flex-column py-5 text-white">
+                                <i class="fa fa-users"></i>
+                                <h4 class="text-uppercase">All Users</h4>
+                                <span class="user-online">12000</span>
+                                <a href="#">View All Users</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+                    <h2 class="h1">Latest Posts</h2>
+                    <table class="table table-hover table-bordered table-striped mt-2">
+                        <thead>
+                            <tr class="bg-success">
+                                <th>Title</th>
+                                <th class="d-none d-md-table-cell">Status</th>
+                                <th class="d-none d-md-table-cell">Category</th>
+                                <th class="d-none d-md-table-cell">Author</th>
+                                <th class="d-none d-md-table-cell">Comments</th>
+                                <th class="d-none d-md-table-cell">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr-shadow">
+                                <td>Why you should learn PHP in 2019
+                                    <div>
+                                        <input type="submit" class="edit" value="Edit" name="edit">
+                                        <input type="submit" class="trash" value="Trash" name="trash">
+                                        <!-- <a href="#" class="edit">Edit</a>
+                                        <a href="#" class="trash">Trash</a> -->
+                                        <a href="#" class="preview">View</a>
+                                    </div>
+                                </td>
+                                <td class="d-none d-md-table-cell">Published</td>
+                                <td class="d-none d-md-table-cell">PHP</td>
+                                <td class="d-none d-md-table-cell">Abdul Barik</td>
+                                <td class="d-none d-md-table-cell">0</td>
+                                <td class="d-none d-md-table-cell">17-12-2019</td>
+                            </tr>
+                            <tr class="tr-shadow">
+                                <td>Why you should learn PHP in 2019
+                                    <div>
+                                        <a href="#" class="edit">Edit</a>
+                                        <a href="#" class="trash">Trash</a>
+                                        <a href="#" class="preview">View</a>
+                                    </div>
+                                </td>
+                                <td class="d-none d-md-table-cell">Published</td>
+                                <td class="d-none d-md-table-cell">PHP</td>
+                                <td class="d-none d-md-table-cell">Abdul Barik</td>
+                                <td class="d-none d-md-table-cell">0</td>
+                                <td class="d-none d-md-table-cell">17-12-2019</td>
+                            </tr>
+                            <tr class="tr-shadow">
+                                <td>Why you should learn PHP in 2019
+                                    <div>
+                                        <a href="#" class="edit">Edit</a>
+                                        <a href="#" class="trash">Trash</a>
+                                        <a href="#" class="preview">View</a>
+                                    </div>
+                                </td>
+                                <td class="d-none d-md-table-cell">Published</td>
+                                <td class="d-none d-md-table-cell">PHP</td>
+                                <td class="d-none d-md-table-cell">Abdul Barik</td>
+                                <td class="d-none d-md-table-cell">0</td>
+                                <td class="d-none d-md-table-cell">17-12-2019</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>         
+            </div>
+        </div>
+
+        
+    </main>
+    <!-- <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/script.js"></script> -->
+    <script src="./dist/bundled.min.js"></script>
+</body>
+</html>

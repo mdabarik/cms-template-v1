@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Panel</title>
+    <!-- <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.bundled.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <li class="nav-item">
+                <a href="#" id="navbar-toggler">
+                    <i class="fa fa-dedent"></i>
+                </a>
+            </li>
+            <li class="nav-item dropdown drop2">
+                <a href="#" class="nav-link nav-link-cta dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-home"></i>
+                    <span class="hide-md">Admin</span>           
+                </a>
+                <div class="dropdown-menu visit-site">
+                    <a href="#" class="dropdown-item"  id="visit-site" target="_blank">Visit Site</a>
+                </div>
+            </li>
+            <li class="nav-item add-new-btn add-new-parent">
+                <a  href="#" class="nav-link nav-link-cta dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-plus"></i> <span class="hide-md">New</span>
+                </a>
+                <div class="dropdown-menu add-new">
+                    <a href="#" class="dropdown-item"  id="visit-site" >Post</a>
+                    <a href="#" class="dropdown-item"  id="visit-site" >Page</a>
+                    <a href="#" class="dropdown-item"  id="visit-site" >User</a>
+                </div>
+            </li>
+        </div>
+        <nav class="nav-top" id="top-nav">
+            <ul class="nav-list mr-1">
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fa fa-envelope"></i>
+                        <span class="notification">88</span>
+                    </a>
+                </li>
+                <li class="nav-item noti-md">
+                    <a href="#" class="nav-link"><i class="fa fa-bell"></i>
+                        <span class="notification">18</span>
+                    </a>
+                </li>
+                <li id="drop1" class="nav-item profile-link dropdown">
+                    <a href="#" class="nav-link nav-link-cta dropdown-toggle" style="font-size:5px" data-toggle="dropdown"> 
+                        <img src="img/user.png" width="20" height="20" style="border-radius:50%;display:inline-block" alt="Profile"> Howdy</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Profile</a>
+                        <a href="#" class="dropdown-item">Settings</a>
+                        <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="utitlities">
+        <div id="nav-container">
+            <nav class="nav-left" id="side-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+
+                    <li class="nav-item">
+                        <a href="#" data-toggle="collapse" data-target="#posts" class="nav-link active"><i class="fa fa-pencil-square-o"></i> Posts
+                        </a>
+                        <ul id="posts" class="collapse sub-list">
+                            <li class="sub-item d-block pt-3 lead">
+                                <a class="d-block sub-link p-sub" href="posts.html">View All</a>
+                            </li>
+                            <li class="sub-item d-block pt-3 pb-2 lead">
+                                <a class="d-block sub-link p-sub" href="post-new.html">Add New</a>
+                            </li>
+                        </ul>
+
+                        <!--
+                            <a href="#" data-toggle="collapse" data-target="#posts" class="navbar-side-link">
+                            <i class="fa fa-pencil-square"></i> Posts
+                        </a>
+                        <ul id="posts" class="collapse sub-list">
+                            <li class="sub-item pl-5 ml-3 pt-2 lead">
+                                <a href="posts.html" class="active">All Posts</a>
+                            </li>
+                            <li class="sub-item pl-5 ml-3 pt-2 lead">
+                                <a href="#">Add New Post</a>
+                            </li>
+                        </ul>
+                        -->
+                    </li>
+                    <li class="nav-item nav-hover">
+                        <a href="#" data-toggle="collapse" data-target="#pages" class="nav-link hover-right"><i class="fa fa-file-text-o"></i> Pages
+                        </a>
+                        <ul id="pages" class="collapse sub-list">
+                            <li class="sub-item d-block pt-3 lead">
+                                <a class="d-block sub-link p-sub" href="#">View All</a>
+                            </li>
+                            <li class="sub-item d-block pt-3 pb-2 lead">
+                                <a class="d-block sub-link p-sub" href="#">Add New</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-list-alt"></i> Categories</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-comments"></i> Comments</a></li>
+                    <li class="nav-item">
+                        <a href="#" data-toggle="collapse" data-target="#users" class="nav-link"><i class="fa fa-users"></i> Users</a>
+                        <ul id="users" class="collapse sub-list">
+                            <li class="sub-item d-block pt-3 lead">
+                                <a class="d-block sub-link p-sub" href="#">View All</a>
+                            </li>
+                            <li class="sub-item d-block pt-3 pb-2 lead">
+                                <a class="d-block sub-link p-sub" href="#">Add New</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-gear"></i> Settings</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+<!--////////////////////|| Main Content Individual depends on pages ||////////////////////////////-->
+        <div class="content-right pb-3"> 
+            
+            <div class="container-fluid">
+                <h1 class="pt-4 text-t-size text-info">Add New Post</h1>
+                <div class="text-right all-posts"><a href="posts.html" class="link">All Posts</a></div>
+
+
+                <div class="row">
+                    <div class="col-lg-12 py-5">
+                        <form>
+                            <div class="form-group">
+                                <label for="title" class="form-control-label">Post Title</label>
+                                <input type="text" class="form-control" placeholder="Enter post title">
+                            </div>
+                            <div class="form-group">
+                                <label for="category" class="form-control-label">Category</label>
+                                <select class="select d-block">
+                                <option value="">Web Development</option>
+                                <option value="">Tech Gadgets</option>
+                                <option value="">Business</option>
+                                <option value="">Health & Wellness</option>
+                                </select>
+                            </div>
+                            <div class="form-group bg-faded py-3">
+                                <label for="file">Image Upload</label>
+                                <input type="file" class="form-control-file" id="file">
+                                <small id="fileHelp" class="form-text text-muted">
+                                Max Size 3MB
+                                </small>
+                            </div>
+                            <div class="form-group">
+                                <label for="title" class="form-control-label">Posted by</label>
+                                <input type="text" class="form-control" value="Barik" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="body">Post Content</label>
+                                <textarea name="editor" cols="30" rows="10" class="form-control" placeholder="Post content"></textarea>
+                            </div>
+                        </form>
+                        <div class="row pt-5">
+                            <div class="col-lg-6 mt-1">
+                                <button class="btn btn-primary">Create New Post</button>
+                            </div>
+                            <div class="col-lg-6 text-lg-right mt-1">
+                                <button class="btn btn-success">Save as Draft Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="js/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/script.js"></script>
+</body>
+</html>
